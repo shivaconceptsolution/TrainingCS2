@@ -1,0 +1,946 @@
+what is .NET:-
+It is technology or platform which is used to create desktop,web,cloud,mobile and network based application for windows o/s and windows server.
+
+.NET means network enable technology means it is compatible with all network model.
+
+.NET technology support multiple programming languages under .NET Framework.
+
+
+
+1)  Desktop Application :-
+
+1.1)   Console Application  
+
+1.2)   Windows Form Application
+
+1.3)   WPF (Windows presenation foundation)
+
+
+2)  Web Application:-
+
+2.1)   ASP.NET Web Forms
+
+2.2)   ASP.NET MVC  
+
+2.3)   ASP.NET MVC CORE
+
+3)  Mobile Application :-
+
+3.1)  Windows PHONE APP,Windows Compact App
+
+4)   Cloud Application :-  
+
+4.1)  Azure 
+
+5)  Reporting Application :-
+
+    MICROSOFT RDLC
+
+6)  Service based application :-
+
+      6.1)  WCF  (Windows Communication Foundation)      
+      6.2)  Web Service
+      6.3)  Web API
+
+7)  WWF :-  Windows WorkFlow Foundation 
+
+ ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+what is c#?
+..................................................................
+It is high level object oriented programming language which provide secure,dynamic and reuseable program code to create real world based application.
+
+
+namespace;
+ 
+class Classname
+{
+     static void Main()  
+     {
+          Statements;
+     }
+
+}
+
+save this file using .cs extension
+
+csc Classname.cs   ----->  .exe
+
+Classname.exe       
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+Source code  ----> Compile  --->   .exe(CIL+METADATA) ------>  CLR(Common language runtime)  ---> 
+JIT  (Just in time compiler) ----> Machine Code ---> Output
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+.NET Framework:-
+
+it is internal software of .NET which provide complete environment to compile and execute .NET program code under operating System.
+
+it is operating system independent and CLR dependent .
+
+Type of .NET Framework:-
+
+1) .NET Windows Framework  (only for windows )
+
+
+2)  .NET Core Framework ( for all operaing system and it is open source)
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+.NET Framework features:-
+
+1)  CLS  (Common language specification)  :-
+
+     .NET use common library for all programming languages because CIL code will be same for all languages. .NET is language dependent means multiple developers can work in same project using different programming language.
+
+
+2)  CTS (Common Type System) :-  
+
+   .NET use common data type for all prorgamming languages.
+   
+
+    C#    int a
+                              -------> Int32
+    VB    Dim a as Integer
+
+
+3)  VES (Virtual Execution System):-  
+    
+    .NET provide self environment CLR to execute .NET program code means if CLR present in any operating system then .NET software will work.
+
+
+    .NET is cross platform using VES feature.
+     
+
+
+4)  BCL & METADATA  :-
+
+.NET all programming languages use common class library to provide functionality of .NET framework means System namespace,System.Data,System.Data.Linq  
+ namespace is common for all programming languages.     
+ MetaData means data dictionary ,it is also common for all programming languages.
+
+5)   Garbage collector:-
+
+ It is used to automatic memory management 
+
+
+6)  Reflection :-  using this we can re-use all features of another version or older version in new version application.
+
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+.NET Framework version :-
+
+1.0         2001
+
+1.1         2003
+
+2.0         2005
+
+3.0 & 3.5   2008
+
+4.0       2010
+
+4.5       2015 
+
+5.0       2019
+
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+
+Q)  WAP to perform addition of two without using primitive datatype and + oeprator?
+
+
+Q)   WAP to Create only  three Object ?
+
+
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+Data type concept in c#:-
+
+It is used to represent pattern and size of data in memory ,C# is the enhancement of c++ hence it support all datatype of c++ programming language.
+
+Type of datatype :-
+
+1)  primitive type:-  all datatype of c and c++ is called primitive type
+
+int   ------> 4byte
+byte  ------> 1
+float ------> 8byte
+double -----> 16byte
+char -------> 2byte
+bool ------>  1byte
+
+2)  derived data type:-
+
+object 
+string
+String
+Array
+class
+structure
+enum
+Collection classes 
+Int 
+Double
+
+
+
+Memory management for datatype:-
+
+1)  Direct memory allocation using stack:-  all primitive datatype directly store data under stack memory.
+
+
+2)  Indirect memory allocation using managed heap:-  all class type datatype indirectly store data means first assign address then substitute value.
+
+
+
+Type conversion in C#:-
+
+1) Boxing  :-  to convert value type elements to reference type is called boxing ,it will be implicit convert data without using type casting.
+
+for example if we assign int data to object then it will automatically convert.
+
+
+2) Unboxing :-  to convert reference type to value then we will manually type cast the data.
+
+if we assign object type data to int type then type casting is required.
+
+
+
+
+
+
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+Operator concept in c#:-
+
+it is used to perform operation using operand ,all operator define as a prdefine operator type method similar to c++.
+
+  operator +()
+  {
+
+  }
+
+
+Type of operator :-
+
+1)  Unary operator :-
+
+   1.1)  increment:-   it is used to increase the value by one 
+   1.1.1) post increment     operand++ 
+   1.1.2) pre increment      ++operand 
+
+   1.2)  decrement:-  opposite of increment
+
+   1.3)  negation :-  it is used to convert positive to negative 
+
+
+2)  Binary operator:-  
+
+    minimum two operand will work
+
+    2.1)  Arithmetic :- +,-,*,/,%
+
+    2.2)  Conditional :-  <,>,<=,>=,!=
+
+    2.3)  Comparision :-  
+
+            ==  for value type datatype
+            Equals() for reference type comparision
+
+   2.4)  Assignment:-
+
+          =    simple assignment
+          +=   a+=3  or a=a+3
+          -=
+          *=
+          /=
+          %=  
+
+  2.5)  Logical operator:-
+   
+       1)  && :-  when all  condition will be true then it will return true value
+
+       2)  ||  :-  when only one condition will be true then it will return true
+
+       3)  !  :-  convert true statement to false statement 
+
+
+3)  Ternary :-  it is used to solve condition based proble using single line statement.
+
+    result  = (condition)?true:false;
+
+    
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+Variable,Constant and Literals:-
+
+Variable :-  We can change the value of identifier in program.
+
+datatype identifier = value;
+
+int a=10;
+
+Constant:-  We can not change the value of identifier in program ,value must be defined under constant identifier.
+
+const int A = 10;
+
+Literals:-  Value of variable,constant is called literals.
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+Conditional Statement:-
+
+If we want to write group of statements separatly using true condition and false condition then we use this.
+
+Type of Conditional Statement:-
+
+1)  Simple IF:-
+
+  if(condition)
+  {
+
+  }
+
+
+2)  If--else:-
+
+   if(condition)
+   {
+
+   }
+   else
+   {
+
+   }
+
+3)  Nested if--else:
+    
+more then one if else statement
+
+ WAP to check greatest using nested .
+   
+
+
+
+4) Ladder if else or else if statement:-  it will work step by step means when first condition will be false then second will be checked ... otherwise else statement will be executed.
+
+if(condition)
+statement
+else if(condition)
+statement
+...
+
+else
+statement
+
+
+5)  Multiple if :-   it will work when we want to display result based on multiple condition .
+
+if(condition)
+statement
+if(condition)
+statement
+if(condition)
+statement;
+
+
+Q1 WAP to check divisibility of number from 3 ,5 and 9 with all combinations.
+
+Q2 WAP to check middle number?
+Q3  WAP to create marksheet of student using five different subject with following condition:-
+
+1)  all entered subject marks should be 0 to 100 ?
+
+2)  if only one subject mark is <33 then student will be suppl and display suppl subject name.
+
+3)  if maxmimum two subject marks is <33 then student will fail
+
+4)  if student is suppl then five grace mark will be applied then student will be pass by grace ,display grace subject name and grace.
+
+
+5)  if all subject marks is >33 then display division and distiction subject name
+
+
+6)  Display suppl subject name and failed subject name if student is suppl and failed.
+
+ 
+Question:-
+
+WAP to create salary calculator where basic,ta,da,comm,pf,noofleave,advancesal will be entered by the user display gross salary and net salary and also check that salary is in income tax slab or not.and display total taxable amount according to new income tax rules.
+
+
+
+Switch--case:-
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+it is used to create option based program ,switch has mutiple choice using multiple case statement.
+
+
+Syntax of switch:-
+
+switch(option)
+{
+   case optionvalue:
+    statement
+    break;
+   case optionvalue:
+    statement
+    break;
+   default:
+    statement;
+    break;
+
+}
+
+
+option==optionvalue
+
+
+
+
+..................................................................
+
+Control Structure or Loop Statement:-
+
+It is used to print range based data using common repeatable block.
+
+C# provide two different type of control Structure:-
+
+1) Entry Control:-
+
+First check condition then execute statement
+
+1.1)  while loop:-
+
+      it is used to solve infinite condition based problem
+
+      init;
+      while(condition)
+      {
+          statement;
+          iteration;
+      }
+
+1.2)  for loop:-
+
+      it is used to create finite condition based problem 
+
+      for(init;condition;iteration)
+      {
+           statement;
+ 
+      } 
+
+1.3)  foreach loop:-
+      it is used to display the element of array and collection objects
+
+      foreach(datatype var in array|collection)
+      {
+             Statement;
+      }
+
+
+2) Exit Control:-
+
+first execute statement then check condition 
+
+init;
+do
+{
+    statement;
+    increment; 
+  
+}while(condition);
+
+
+
+
+ 
+
+
+Special Statement in C#:-
+
+1)   break:-
+
+it is used to terminate the loop manually .
+
+
+2)   continue:-
+
+    it is used to skip the current the iteration and execute next iteration
+
+
+3)   goto :-
+
+     it is used to jump the iteration of loop or normal statement from bottom to      top.
+
+ 
+
+    
+
+1
+2
+3
+4
+5
+5
+4
+3
+2
+1
+
+
+,,,,,,,,,,,,,,,,,,,
+
+WAP to display prime number in fibonacci series?
+
+
+WAP to convert decimal to binary and binary to decimal?
+
+
+WAP to find max digit,second max digit and third max digit in mobile number using infinite while loop?
+
+
+WAP to print pattern?
+
+
+1 0 0 1 0
+1 0 0 1
+1 0 0
+1 0
+1
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+A a B b C
+A a B b
+A a B
+A a
+A
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+      *
+   *  * *
+*  *  * *  *
+   *  * *
+      *
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+Array Concept in C#:-
+..........................................................
+
+It is a collection homogenious elements ,Array store element using proper sequence ,base index of array will be and last index array will be size-1;
+
+Type of array:-
+
+1)  One dimension array  :-  using this we can store element with rows only.
+
+    Datatype [] arrayname = new Datatype[size];
+    
+
+      
+
+
+2)  Two dimension array :-  using this we can store element with rows and column.
+
+  Datatype [,] arrayname = new Datatype[,];
+  
+  int [,] arr = new int[2,2];
+
+
+
+
+3)  Multi dimension array:-  using this array we can manage data using x ,y and z-co-ordinate of graphics system.
+
+  int [,,] arr = new int[,,];
+  
+
+
+ 
+
+
+4)  Jagged Array :-  using this array we can store element using collection of rows means jagged contain collection of heterogenious row elements.
+
+datatype [][] arrayname = new datatype[row][];
+
+arrayname[0] = new datatype[colsize];
+
+
+
+
+5)  object array
+
+
+
+Assignment:-
+
+q1)  WAP to multiply two matrix
+
+q2)  WAP to display sum of prime elements and composite element in jagged array?
+
+q3)  WAP to display max and second max element in jagged array and append this in jagged row?
+
+q4)  WAP to create multidimension String array and find maximum pallindrom String ?
+
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Create ATM Program with all operation when user will enter correct pin code then it will process
+
+proceed  to next screen with following menu option
+
+1.   Press C for Credit
+
+2.   Press D for Debit
+
+3.   Press B for Check Balance 
+
+4:-  Press R for Repeat
+
+5:-  Press E for exit
+
+
+If Pin code will be incorrect then three attempt should be provide to user's to enter right pin code otherwise exit from System.
+
+User can perform only three operation with one login session ,display complete log details after exit from System.
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+OOP'S Concept in C#:-
+,,,,,,,,,,,,,,,,,,,,,,,
+
+Object oriented programming structure .
+
+It is approach which is used to create secure ,dynamic ,extendible,accessable and reuseble application.
+
+OOP'S provide set of rules to implement dynamic programming for real-world application.
+
+
+Rules of oop's:-
+
+
+1)   class and object  :-  (Mandatory rules)
+
+
+2)   Data abstraction :-      Security,Accessbility
+
+
+3)   Data encapsulation :-     Security,abstraction 
+
+
+4)   Polymorphism   :-         usability ,extendbility 
+
+
+5)   Inheritance :-            Reusebility ,extendbility   
+
+
+What is class?
+
+It is user define datatype which is used to define the characterstics of Object using data member (variable) and member function (method).
+
+We can define multiple objects defination under single class but all object should be similar type.
+
+
+What is Object?
+
+It is real world entity which has identity,state and behaviour.
+
+
+Syntax of class:-
+
+class Classname
+{
+   data member;
+   constructor;
+   properties;
+   static constructor;
+   inner class;
+   memberfunction;
+   object;
+   indexer;       
+}
+
+
+Data member:-
+
+
+it is used to declare the attribute of object in terms variable ,constant ,property etc.
+
+type of data member:-
+
+
+1)  Static Data Member or Class type:-
+
+     it will allocate memory at compile time and static member use class memory to      store data hence it will be called by classname.
+     it has constant memory.
+     
+     static datatype varname;
+     static int x;
+
+2)   Instance Data Member or Dynamic or non-static :-
+
+      it will allocate memory at runtime using Object. we can provide individual       memory allocation to dynamic data member;
+      
+      datatype varname;
+
+
+
+      
+Member Function :-
+
+it is used to define attribute of object using static and dynamic memer function.
+
+
+static  member function :- 
+
+
+it is used to define static data member ,it will be called by Classname.
+
+
+Constructor:-
+......................................................
+it is special component of class which is used to intialized dynamic data member of class.  by default constructor present into class that is called default constructor.
+
+
+type of constructor:-
+
+1)  Static Constructor
+
+1.1)  Default Constructor  :-  this constructor will be called first without creating object.
+
+2)   Non-static
+
+2.1)  Default
+
+2.2)  Parametrised
+
+2.3)  Copy 
+
+
+Data abstraction and data encapsulation:-
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+It is used to hide internal functionality of the program. it is used to provide indirect accessbility of data member and member function.
+
+
+How many ways to implement data abstraction:-
+
+1   using interface
+
+2   using abstract class
+
+3)  using access modifier 
+
+
+1)  private  :-  access only in same class 
+
+
+2)  internal :-  provide accessbility for all classes in same project
+
+
+3)  protected :-   provide accessbility for base class to derived class in same project and cross project
+
+
+4)  protected internal :-  combine features of protected and internal
+
+
+5)  public :-  access outside of the project
+
+
+
+ 
+Data encapsulation:-  it is used to bind data member and member functio under member function and class.
+
+1) property
+
+2) constructor
+
+3) member function
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+Structure :-
+
+it is used to define composite userdefine datatype which can contain primitive and non-primitive datatype.
+
+
+Structure is value type datatype because it will allocate memory using Stack memory.
+
+
+It will be defined using struct keyword ,Structure contain data member,member function,static component,property ,it not support polymorphism and inheritance features otherwise it has all supported component of class.
+
+
+struct Structurename
+{
+   data member;
+   member function;
+}
+
+
+
+enum:-  
+
+enum is a collection of constant value ,it will work similar to array hence it is also called integer type constant array.
+
+enum enumname
+{
+   
+
+}
+
+
+
+String Class in C#:-
+
+It provide immutable object means we can not change data of String from actual address .
+
+String can be converted into char array using index .
+
+String can be declared using two different ways:-
+
+1)  String as a reference
+
+    String s = "hello"
+
+
+2)  String as a Object
+
+    String s1 = new String("hello");
+
+
+
+StringBuilder:-  it is mutable object means we can change data from actual address.
+
+StringBuilder can be used to perform append operation for multiple String literals.
+
+StringBuilder sb = new StringBuilder();
+sb.Append("Data");
+
+ 
+1) WAP to validate internate url with all pattern
+
+
+2)  WAP to validate contact number ,landline no,mobile no
+
+
+3)  WAP to find max char in each word of paragraph and check max char in complete para.
+
+4)  replace all text of paragraph according to user input .
+
+
+
+5)  display total count of all char in paragraph in single line ,display counting result for individual line and display which char counting is highest.
+......................................................................
+
+Delegate :-
+
+
+it is used to manage event handling based program ,delegate is an intermediater between method and user's.
+it is also called method pointer because we will pass address of method then delegate will point to that method.
+
+
+delegate prototype should be similar to method prototype.
+
+Syntax of delegate:-
+
+access specifier delegate returntype delegatename();
+
+Type of delegate:-
+
+1)  Singlecast delegate  :-  if we create individual delegate for individual method.
+
+
+2)  Multicast delegate  :-  if we create common delegate for multiple method then it is called multicast delegate.
+
+
+
+Event:-
+
+if we perform any action in UI Controls then event will be raised ,it has publishers and subscriber class.  publisher is used to publish event and subscriber is used to handle event to perform action.
+
+
+Event will be declared after delegate means event will be encapsulated by delegate reference.
+
+accessmodifier delegate returntype Delegatename();
+accessmodifier event Delegatename eventname;  
+
+
+Partial class:-
+
+using this we can create same name class in same project,it is a distribution of classes in project to work in same class with developers.
+partial class Classname
+{
+
+
+}
+
+
+
+
+Extension Method :-  it is a  special static method which can extend the features of all static predefine and userdefine class.
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+File handling concept in C#:-
+........................................................................
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+        
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+    
