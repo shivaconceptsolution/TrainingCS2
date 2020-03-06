@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B971FD36-54F7-44F4-8684-69E547660CC4}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CsharpTutorial</RootNamespace>
+    <AssemblyName>CsharpTutorial</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>CsharpTutorial.IntegerExtension</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="A.cs" />
+    <Compile Include="AbstractClassExample.cs" />
+    <Compile Include="AccessModifier.cs" />
+    <Compile Include="AccessModifier2.cs" />
+    <Compile Include="AccessModifier3.cs" />
+    <Compile Include="Admin.cs" />
+    <Compile Include="ArrayExamplecs.cs" />
+    <Compile Include="B.cs" />
+    <Compile Include="Bank.cs" />
+    <Compile Include="BoxingUnboxing.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="ConstructorExample.cs" />
+    <Compile Include="DataMemberExample .cs" />
+    <Compile Include="DelegateExample.cs" />
+    <Compile Include="EnumExample.cs" />
+    <Compile Include="GenericExample.cs" />
+    <Compile Include="GreatestExample.cs" />
+    <Compile Include="InhrCons.cs" />
+    <Compile Include="InnerClassExample.cs" />
+    <Compile Include="IntegerExtension.cs" />
+    <Compile Include="JaggedExample.cs" />
+    <Compile Include="LoopExample.cs" />
+    <Compile Include="MemberFunctionExample.cs" />
+    <Compile Include="MultiArrExample.cs" />
+    <Compile Include="MultiCastDelegate.cs" />
+    <Compile Include="NestedLoop.cs" />
+    <Compile Include="ObjectArr.cs" />
+    <Compile Include="OperatorExample.cs" />
+    <Compile Include="OperatorOverloadingcs.cs" />
+    <Compile Include="OverhidingExample.cs" />
+    <Compile Include="PintHelper.cs" />
+    <Compile Include="Polymorphism.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SpecialConditionStatement.cs" />
+    <Compile Include="StaticClassExample.cs" />
+    <Compile Include="StringBuilderExample.cs" />
+    <Compile Include="StringExample.cs" />
+    <Compile Include="StructureExamplecs.cs" />
+    <Compile Include="SwitchExample.cs" />
+    <Compile Include="TernaryExample.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
